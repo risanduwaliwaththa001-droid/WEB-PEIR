@@ -1,12 +1,12 @@
 {
-"name": "Robin-web-pair",
+"name": "Rissa-web-pair",
     "version": "0.0.1",
     "description": "A multi functional whatsapp bot Web paircode.",
     "main": "index.js",
     "scripts": {
-      "start": "pm2 start index.js --deep-monitoring --attach --name Robin",
-      "stop": "pm2 stop robin",
-     "restart": "pm2 restart robin"
+      "start": "pm2 start index.js --deep-monitoring --attach --name Rissa",
+      "stop": "pm2 stop rissa",
+     "restart": "pm2 restart rissa"
     },
   "dependencies": {
     "@whiskeysockets/baileys": "^6.7.9",
