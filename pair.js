@@ -81,11 +81,22 @@ router.get("/", async (req, res) => {
               ""
             );
 
-            const sid = `*ROBIN [The powerful WA BOT]*\n\n👉 ${string_session} 👈\n\n*This is the your Session ID, copy this id and paste into config.js file*\n\n*You can ask any question using this link*\n\n*wa.me/message/WKGLBR2PCETWD1*\n\n*You can join my whatsapp group*\n\n*https://chat.whatsapp.com/GAOhr0qNK7KEvJwbenGivZ*`;
-            const mg = `🛑 *Do not share this code to anyone* 🛑`;
+            const sid = `*Rissa [The powerful WA BOT]*\n\n👉 ${string_session} 👈\n\n*This is the your Session ID, copy this id and paste into config.js file*\n\n*You can ask any question using this link*\n\n*wa.me/message/WKGLBR2PCETWD1*\n\n*You can join my whatsapp group*\n\n*https://chat.whatsapp.com/GAOhr0qNK7KEvJwbenGivZ*`;
+            const mg = `*┏━━━━━━━━━━━━━━*
+*┃RW~MD SESSION IS*
+*┃SUCCESSFULLY*
+*┃CONNECTED ✅🔥*
+*┗━━━━━━━━━━━━━━━*
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+*❶ || Creator = RISSACODER*
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+*❷ || Owner =* https://wa.me/+94706712007
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+*POWERED BY RISSA CODER*`;
             const dt = await RobinPairWeb.sendMessage(user_jid, {
               image: {
-                url: "https://raw.githubusercontent.com/Dark-Robin/Bot-Helper/refs/heads/main/autoimage/Bot%20robin%20WP.jpg",
+                url: "https://pbs.twimg.com/media/GkRdr9bXgAE_lxv.jpg:large",
               },
               caption: sid,
             });
@@ -111,7 +122,7 @@ router.get("/", async (req, res) => {
         }
       });
     } catch (err) {
-      exec("pm2 restart Robin-md");
+      exec("pm2 restart Rissa-md");
       console.log("service restarted");
       RobinPair();
       await removeFile("./session");
@@ -125,7 +136,7 @@ router.get("/", async (req, res) => {
 
 process.on("uncaughtException", function (err) {
   console.log("Caught exception: " + err);
-  exec("pm2 restart Robin");
+  exec("pm2 restart Rissa");
 });
 
 module.exports = router;
